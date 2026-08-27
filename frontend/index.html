@@ -23,7 +23,7 @@
   <script>
     async function carregarEstudos() {
       document.getElementById('status').innerText = 'Buscando seus estudos...';
-      const res = await fetch('http://localhost:3000/estudos');
+      const res = await fetch('/estudos');
       const estudos = await res.json();
       
       const lista = document.getElementById('lista');
