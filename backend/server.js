@@ -14,4 +14,6 @@ app.get('/estudos', (req, res) => {
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/index.html'));
 });
-module.exports = app;
+app.listen(3000, () => {
+  console.log('Backend rodando em http://localhost:3000');
+});
